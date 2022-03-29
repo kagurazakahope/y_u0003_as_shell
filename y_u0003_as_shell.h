@@ -1,5 +1,7 @@
 #pragma once
 
+#include "quantum.h"
+
 #define _XX_ KC_NO
 
 // _LAYOUT shows how to wire: "K" + 1 digit Row + 2 digits Col

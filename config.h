@@ -19,6 +19,8 @@
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
 
+#include "config_common.h"
+
 
 #ifndef DEVICE_VER
 #   define DEVICE_VER 0x0100
@@ -49,7 +51,7 @@
 #endif // VENDOR_ID
 
 #ifndef MATRIX_COLS
-#   define MATRIX_COLS 22
+#   define MATRIX_COLS 21
 #endif // MATRIX_COLS
 
 #ifndef MATRIX_ROWS
@@ -58,11 +60,35 @@
 
 
 #ifndef MATRIX_COL_PINS
-#   define MATRIX_COL_PINS { C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2, C2 }
+#define MATRIX_COL_PINS { C12, D2, B4, B5, B6, B7, B8, B9, C13, C14, C15, C0, C1, C2, A0, A1, A2, C4, C5, B0, B1 }
 #endif // MATRIX_COL_PINS
 
 
 #ifndef MATRIX_ROW_PINS
-#   define MATRIX_ROW_PINS { D1, D1, D1, D1, D1, D1 }
+#define MATRIX_ROW_PINS { C3, A3, A4, A5, A6, A7 }
 #endif // MATRIX_ROW_PINS
+
+#define ENCODERS_PAD_A { B12 }
+#define ENCODERS_PAD_B { B14 }
+#define ENCODER_RESOLUTION 4
+#define MY_MUTE_BTN_DIRECT_PIN B13
+
+#define MY_LED_FN_LOCK_PIN C10
+#define LED_CAPS_LOCK_PIN C11
+#define LED_NUM_LOCK_PIN B10
+#define LED_SCROLL_LOCK_PIN A15
+
+
+/* COL2ROW, ROW2COL */
+#define DIODE_DIRECTION COL2ROW
+
+//#define BACKLIGHT_PIN B7
+//#define BACKLIGHT_LEVELS 4
+
+/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
+#define DEBOUNCE 10
+
+/* disable these deprecated features by default */
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
 
