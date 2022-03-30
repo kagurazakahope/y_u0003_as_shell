@@ -1,12 +1,6 @@
-// Copyright 2022 kagurazakahope (@kagurazakahope)
-// SPDX-License-Identifier: GPL-2.0-or-later
-
 #pragma once
 
-/*
- * Feature disable options
- *  These options are also useful to firmware size reduction.
- */
+#include "config_common.h"
 
 /* disable debug print */
 //#define NO_DEBUG
@@ -18,9 +12,6 @@
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
-
-#include "config_common.h"
-
 
 #ifndef DEVICE_VER
 #   define DEVICE_VER 0x0100

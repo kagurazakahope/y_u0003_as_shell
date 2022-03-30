@@ -1,27 +1,23 @@
 # y_u0003_as_shell
 
-![y_u0003_as_shell](imgur.com image replace me!)
+![y_u0003_as_shell]()
 
-*A short description of the keyboard/project*
+firmware for a customized fullsize keyboard with FN alternative multimedia shortcuts.
 
 * Keyboard Maintainer: [kagurazakahope](https://github.com/kagurazakahope)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported:
+    - MCU: STM32F103
+    - PCB: customized design to use the backshell (and the cabel :smile:) of a d*ll y_u0003 multimedia keyboard
+* Hardware Availability: https://weibo.com/u/5667208492
 
-Make example for this keyboard (after setting up your build environment):
+Make example for this keyboard (after setting up your build environment): *You need [QMK](https://qmk.fm/) to build the firmware.*
 
-    make y_u0003_as_shell:default
+    qmk compile -kb y_u0003_as_shell -km default
 
 Flashing example for this keyboard:
 
-    make y_u0003_as_shell:default:flash
-
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+> Only avaliable via **ST_LINK**
 
 ## Bootloader
 
-Enter the bootloader in 3 ways:
-
-* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `RESET` if it is available
+Sorry STM32F103 doesn't have USB DFU therefore **NO** Bootloader.
