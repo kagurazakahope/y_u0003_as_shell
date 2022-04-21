@@ -46,8 +46,8 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     return true;
 }
 
-static int mute_btn_level = false;
-static int mute_btn_level_temp = false;
+static int mute_btn_level;
+static int mute_btn_level_temp;
 static bool debouncing = false;
 static uint16_t debouncing_time;
 
@@ -58,8 +58,8 @@ void matrix_init_user(void) {
 
     // MUTE pin is bundled with BOOT0, external pull down and active high.
     setPinInput(MY_MUTE_BTN_DIRECT_PIN);
-    wait_ms(5);
-    mute_btn_level = readPin(MY_MUTE_BTN_DIRECT_PIN);
+    //wait_ms(5);
+    mute_btn_level = 0; // readPin(MY_MUTE_BTN_DIRECT_PIN);
     mute_btn_level_temp = mute_btn_level;
 }
 
