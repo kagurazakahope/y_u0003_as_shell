@@ -17,7 +17,7 @@ Make example for this keyboard (after setting up your build environment): *You n
 
 Flashing example for this keyboard:
 
-Suggest to use STM32CubeProgrammer to flash. Other methods were not tested.
+Suggest to use STM32CubeProgrammer to flash. Other methods had not been tested.
 
 ## Bootloader
 
