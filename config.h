@@ -27,19 +27,19 @@
 
 #define VENDOR_ID 0xFEED
 
-#define MATRIX_COLS 21
-#define MATRIX_ROWS 6
-#define MATRIX_COL_PINS { B7, B6, B5, B4, B3, D2, C12, C11, C10, A15, A10, A9, A8, C9, A6, A3, A4, A1, A5, A2, A0 }
-#define MATRIX_ROW_PINS { B10, B1, B0, C5, C4, A7 }
+#define MATRIX_COLS 17
+#define MATRIX_ROWS 7
+#define MATRIX_COL_PINS { A3, A4, A5, A6, A7, A8, A9, A10, A15, A14, A13, B0, B9, B10, B12, B13, B14 }
+#define MATRIX_ROW_PINS { B8, B1, B3, B4, B5, B6, B7 }
 
-#define ENCODERS_PAD_A { B12 }
-#define ENCODERS_PAD_B { B14 }
+#define ENCODERS_PAD_A { C15 }
+#define ENCODERS_PAD_B { B15 }
 #define ENCODER_RESOLUTION 4
-#define MY_MUTE_BTN_DIRECT_PIN B13
+#define MY_MUTE_BTN_DIRECT_PIN C14
 
-#define LED_CAPS_LOCK_PIN C11
-#define LED_NUM_LOCK_PIN B10
-#define LED_SCROLL_LOCK_PIN A15
+#define LED_NUM_LOCK_PIN A0
+#define LED_CAPS_LOCK_PIN A1
+#define LED_SCROLL_LOCK_PIN A2
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 10
