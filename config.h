@@ -15,7 +15,7 @@
 
 #define DEVICE_VER 0x0100
 
-#define DESCRIPTION y_u0003_as_shell
+#define DESCRIPTION Customized Full Media Keyboard with y_u0003 backshell
 
 #define DIODE_DIRECTION COL2ROW
 
@@ -29,11 +29,11 @@
 
 #define MATRIX_COLS 17
 #define MATRIX_ROWS 7
-#define MATRIX_COL_PINS { A3, A4, A5, A6, A7, A8, A9, A10, A15, A14, A13, B0, B9, B10, B12, B13, B14 }
+#define MATRIX_COL_PINS { A3, A4, A5, A6, A7, A8, C13, A10, A14, A15, A13, B0, B9, B10, B12, B13, B14 }
 #define MATRIX_ROW_PINS { B8, B1, B3, B4, B5, B6, B7 }
 
-#define ENCODERS_PAD_A { C15 }
-#define ENCODERS_PAD_B { B15 }
+#define ENCODERS_PAD_A { B15 }
+#define ENCODERS_PAD_B { C15 }
 #define ENCODER_RESOLUTION 4
 #define MY_MUTE_BTN_DIRECT_PIN C14
 

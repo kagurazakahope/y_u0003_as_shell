@@ -8,9 +8,23 @@
 
 #undef STM32_LSECLK
 #define STM32_LSECLK                0U
+#define STM32_LSE_ENABLED FALSE
 
+#if 1
 #undef STM32_HSECLK
 #define STM32_HSECLK                25000000U
+
+#else
+
+#undef STM32_HSECLK
+#define STM32_HSECLK                8000000U
+#define STM32_HSE_BYPASS
+
+#undef STM32_PLLM_VALUE
+#define STM32_PLLM_VALUE            8
+
+
+#endif
 
 //#define STM32_HSE_BYPASS
 

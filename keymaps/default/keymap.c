@@ -17,7 +17,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_FN] = LAYOUT_fullsize_ansi(
-        _______,          KC_WBAK, KC_WFWD, KC_WSTP, KC_WREF, KC_WSCH, KC_MSEL, KC_MYCM, KC_CALC, KC_MPRV, KC_MPLY, KC_MSTP, KC_MNXT,   KC_WAKE, _______, KC_SLEP,   _______, _______, _______, _______,
+        RESET,            KC_WBAK, KC_WFWD, KC_WSTP, KC_WREF, KC_WSCH, KC_MSEL, KC_MYCM, KC_CALC, KC_MPRV, KC_MPLY, KC_MSTP, KC_MNXT,   KC_WAKE, _______, KC_SLEP,   _______, _______, _______, _______,
 
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,   _______, _______, NK_ON,     _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,   _______, _______, NK_OFF,    _______, _______, _______,
@@ -61,6 +61,8 @@ void matrix_init_user(void) {
     //wait_ms(5);
     mute_btn_level = 0; // readPin(MY_MUTE_BTN_DIRECT_PIN);
     mute_btn_level_temp = mute_btn_level;
+
+    setPinInputHigh(A9);
 }
 
 void matrix_scan_user(void) {
